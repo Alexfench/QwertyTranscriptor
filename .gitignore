@@ -2,5 +2,3 @@ bin/
 obj/
 packages/
 .vs/transcriptor/v16/.suo
-.gitattributes
-.gitignore 
