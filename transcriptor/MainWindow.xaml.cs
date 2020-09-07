@@ -85,11 +85,5 @@ namespace transcriptor
                 j = 0;
             }
         }
-        
-
-        private void Text_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-
-        }
     }
 }
