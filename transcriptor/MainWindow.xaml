@@ -29,9 +29,12 @@
             <ComboBoxItem Content="ru->en"/>
             <ComboBoxItem Content="en->ru"/>
         </ComboBox>
-        <Label x:Name="label" Content="Символов: " HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Width="120" Height="23" VerticalContentAlignment="Center"/>
+        <Label x:Name="label" Content="Символов: " HorizontalAlignment="Left" Margin="244,235,0,0" VerticalAlignment="Top" Width="120" Height="23" VerticalContentAlignment="Center"/>
         <TextBox x:Name="text" HorizontalAlignment="Left" Height="220" Margin="10,10,0,0" TextWrapping="Wrap" Text="Ddtlbnt cdjq ntrcn" VerticalAlignment="Top" Width="354"/>
-
+        <ToggleButton x:Name="toggle"
+  Style="{StaticResource MaterialDesignSwitchToggleButton}"
+  ToolTip="Default ToggleButton Style" Margin="10,235,319,40" />
+        <Label Content="Удалять другой язык" HorizontalAlignment="Left" Margin="60,234,0,0" VerticalAlignment="Top" Height="24"/>
     </Grid>
 
 </Window>

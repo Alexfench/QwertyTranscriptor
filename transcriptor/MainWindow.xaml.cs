@@ -60,10 +60,19 @@ namespace transcriptor
                             text.Text += RU[j];
                             break;
                         }
+
                         if (Line[i] == RU[j])
                         {
-                            text.Text += Line[i];
-                            break;
+                            if (toggle.IsChecked == false)
+                            {
+                                text.Text += Line[i];
+                                break;
+                            }
+                            if (toggle.IsChecked == true)
+                            {
+
+                                break;
+                            }
                         }
                     }
 
@@ -76,8 +85,15 @@ namespace transcriptor
                         }
                         if (Line[i] == EN[j])
                         {
-                            text.Text += Line[i];
-                            break;
+                            if (toggle.IsChecked == false)
+                            {
+                                text.Text += Line[i];
+                                break;
+                            }
+                            if (toggle.IsChecked == true)
+                            {
+                                break;
+                            }
                         }
                     }
                 }
