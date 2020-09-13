@@ -12,11 +12,11 @@ namespace transcriptor
 {
 
     public partial class MainWindow : Window
-    {                                                                                                                                  //отсюда неввожимые с клавиатуры символы которые надо будет найти
+    {                                                                                                                                  //отсюда невожимые с клавиатуры символы которые надо будет найти
         readonly string RU_Symbols = "ё1234567890-=йцукенгшщзхъ\\фывапролджэячсмитьбю.Ё!\"№;%:?*()_+ЙЦУКЕНГШЩЗХЪ/ФЫВАПРОЛДЖЭЯЧСМИТЬБЮ, –";
         readonly string EN_Symbols = "`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:\"ZXCVBNM<>? –";
-        int j;
-        int i;
+        int i, j, k;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -26,17 +26,16 @@ namespace transcriptor
 
         private void But_Click_1(object sender, RoutedEventArgs e)
         {
+            k = 0;
             string line = text.Text;
 
             List<char> RU = new List<char> { };
             List<char> EN = new List<char> { };
             List<char> Line = new List<char> { };
 
-            int k = 0;
             foreach (char a in line)
             {
                 text.Clear();
-
                 k++;
                 Line.Add(a);
             }
@@ -48,7 +47,7 @@ namespace transcriptor
             {
                 EN.Add(a);
             }
-
+            label.Content = $"Символов: {k}";
 
             for (i = 0; i <= k - 1; i++)
             {
