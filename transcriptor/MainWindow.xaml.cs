@@ -1,4 +1,5 @@
 ﻿using MahApps.Metro.Controls;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -45,6 +46,7 @@ namespace transcriptor
             SnackbarOne.IsActive = false;
             SnackbarOne.IsActive = true;
             SnackbarOne.Message.Content = "Очистил";
+            MaterialDesignThemes.Wpf.HintAssist.SetHint(text, "Вставьте эльфийский текст");
             text.Text = null;
             await Task.Delay(1000);
             SnackbarOne.IsActive = false;
@@ -53,6 +55,7 @@ namespace transcriptor
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
 
@@ -80,7 +83,9 @@ namespace transcriptor
             {
                 EN.Add(a);
             }
-            label.Content = $"Символов: {k}";
+
+
+            MaterialDesignThemes.Wpf.HintAssist.SetHint(text, $"Символов: {k}");
 
             for (i = 0; i <= k - 1; i++)
             {

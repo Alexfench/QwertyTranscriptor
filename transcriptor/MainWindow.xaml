@@ -13,60 +13,54 @@
      TextOptions.TextRenderingMode="Auto"
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="Transcriptor" Width="458" Height="461" Icon="favicon.ico" ResizeMode="CanMinimize">
+        Title="Transcriptor" Width="458" Height="420" Icon="favicon.ico" ResizeMode="CanMinimize">
 
 
 
     <Grid Margin="10">
-        <Button x:Name="but" ToolTip="Выполнить" Content="Выполнить" Margin="0,0,10,14" Width="120" Click="But_Click_1" Height="32" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Bottom" VerticalContentAlignment="Center"/>
         <ComboBox x:Name="combo"
-            Margin="10,0,0,14" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="85" Height="32" SelectedIndex="1">
-            <ComboBoxItem>
-                Ru->En
-            </ComboBoxItem>
-            <ComboBoxItem>
-                En->Ru
-            </ComboBoxItem>
-
+            Margin="10,0,0,10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="179" Height="32" SelectedIndex="1">
+            <ComboBoxItem Content="Russian → English"/>
+            <ComboBoxItem Content="English → Russian "/>
         </ComboBox>
-        <Label x:Name="label" Content="Символов: " HorizontalAlignment="Right" Margin="0,0,10,69" VerticalAlignment="Bottom" Width="120" Height="23" VerticalContentAlignment="Center"/>
         <TextBox x:Name="text"
     Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
     AcceptsReturn="True"
     TextWrapping="Wrap"
     VerticalScrollBarVisibility="Auto"
-    materialDesign:HintAssist.Hint="Вставьте эльфийский сюда"
-    IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" Margin="10,65,10,112" />
+    materialDesign:HintAssist.Hint="Вставьте эльфийский текст"
+    materialDesign:HintAssist.FloatingScale="1" 
+    IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" Margin="10,10,10,99" />
         <ToggleButton x:Name="toggle"
   Style="{StaticResource MaterialDesignSwitchToggleButton}"
-  ToolTip="Default ToggleButton Style" Margin="10,0,0,66" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="26" />
-        <Label Content="Удалять другой язык" HorizontalAlignment="Left" Margin="55,0,0,66" VerticalAlignment="Bottom" Height="26"/>
+  ToolTip="Default ToggleButton Style" Margin="10,0,0,55" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Width="43" />
+        <Label Content="Удалять другой язык" HorizontalAlignment="Left" Margin="58,0,0,55" Height="23" HorizontalContentAlignment="Stretch" VerticalAlignment="Bottom" VerticalContentAlignment="Stretch"/>
         <Button
   Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
-  HorizontalAlignment="Left"
-  ToolTip="Скопировать" Margin="55,10,0,0" VerticalAlignment="Top" Click="Button_Click_1">
+  HorizontalAlignment="Right"
+  ToolTip="Скопировать" Margin="0,0,55,47" VerticalAlignment="Bottom" Click="Button_Click_1">
             <materialDesign:PackIcon Kind="ContentCopy"
             Height="24"
     Width="24" />
         </Button>
         <Button
        Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
-       HorizontalAlignment="Left"
-       ToolTip="Очистить" Margin="100,10,0,0" VerticalAlignment="Top" Click="Button_Click_2">
+       HorizontalAlignment="Right"
+       ToolTip="Очистить" Margin="0,0,10,47" VerticalAlignment="Bottom" Click="Button_Click_2">
             <materialDesign:PackIcon Kind="Delete"
            Height="24"
            Width="24" />
         </Button>
         <Button
             Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
-            HorizontalAlignment="Left"
-            ToolTip="Вставить" Margin="10,10,0,0" VerticalAlignment="Top" Click="Button_Click">
+            HorizontalAlignment="Right"
+            ToolTip="Вставить" Margin="0,0,100,47" VerticalAlignment="Bottom" Click="Button_Click">
             <materialDesign:PackIcon Kind="ContentPaste"
                 Height="24"
                 Width="24" />
 
         </Button>
-        <!-- simplest form -->
+        <Button x:Name="but" ToolTip="Выполнить" Content="Выполнить" Margin="0,0,10,10" Width="130" Click="But_Click_1" Height="32" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Bottom" VerticalContentAlignment="Center"/>
         <materialDesign:Snackbar
   Message="скопировал"
   IsActive="false"
