@@ -70,7 +70,6 @@ namespace transcriptor
                             }
                             if (toggle.IsChecked == true)
                             {
-
                                 break;
                             }
                         }

@@ -13,36 +13,34 @@
      TextOptions.TextRenderingMode="Auto"
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="transcriptor" Width="400" Height="356" ResizeMode="CanMinimize" Icon="favicon.ico">
-    
+        Title="Transcriptor" Width="400" Height="397" Icon="favicon.ico" ResizeMode="CanMinimize">
+
 
 
     <Grid Margin="10">
-        <Button x:Name="but" Content="Выполнить" Margin="0,263,10,0" Width="120" Click="But_Click_1" Height="32" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
-        <ComboBox x:Name="combo" Margin="10,263,0,0" Width="120" IsSynchronizedWithCurrentItem="True" SelectedIndex="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" BorderBrush="Black" Foreground="Black">
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </ComboBox.Background>
-            <ComboBoxItem Content="ru->en"/>
-            <ComboBoxItem Content="en->ru"/>
+        <Button x:Name="but" Content="Выполнить" Margin="0,0,10,14" Width="120" Click="But_Click_1" Height="32" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Bottom" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="combo"
+            Margin="10,0,0,14" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="85" Height="32" SelectedIndex="1">
+            <ComboBoxItem>
+                Ru->En
+            </ComboBoxItem>
+            <ComboBoxItem>
+                En->Ru
+            </ComboBoxItem>
+
         </ComboBox>
-        <Label x:Name="label" Content="Символов: " HorizontalAlignment="Left" Margin="244,235,0,0" VerticalAlignment="Top" Width="120" Height="23" VerticalContentAlignment="Center"/>
+        <Label x:Name="label" Content="Символов: " HorizontalAlignment="Right" Margin="0,0,10,69" VerticalAlignment="Bottom" Width="120" Height="23" VerticalContentAlignment="Center"/>
         <TextBox x:Name="text"
     Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
-    VerticalAlignment="Top"
-    Height="229"
     AcceptsReturn="True"
     TextWrapping="Wrap"
     VerticalScrollBarVisibility="Auto"
     materialDesign:HintAssist.Hint="Вставьте эльфийский сюда"
-    IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" />
+    IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" Margin="10,10,10,112" />
         <ToggleButton x:Name="toggle"
   Style="{StaticResource MaterialDesignSwitchToggleButton}"
-  ToolTip="Default ToggleButton Style" Margin="10,235,319,40" IsChecked="True" />
-        <Label Content="Удалять другой язык" HorizontalAlignment="Left" Margin="60,234,0,0" VerticalAlignment="Top" Height="24"/>
+  ToolTip="Default ToggleButton Style" Margin="10,0,0,66" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="26" />
+        <Label Content="Удалять другой язык" HorizontalAlignment="Left" Margin="55,0,0,66" VerticalAlignment="Bottom" Height="26"/>
     </Grid>
 
 </Window>
