@@ -1,0 +1,96 @@
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\bin\Debug\transcriptor.exe.config
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\bin\Debug\transcriptor.exe
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\bin\Debug\transcriptor.pdb
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\MainWindow.g.cs
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\App.g.cs
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\transcriptor_MarkupCompile.cache
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\transcriptor_MarkupCompile.lref
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\MainWindow.baml
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\transcriptor.g.resources
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\transcriptor.Properties.Resources.resources
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\transcriptor.csproj.GenerateResource.cache
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\transcriptor.csproj.CoreCompileInputs.cache
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\transcriptor.exe
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\transcriptor.pdb
+D:\YandexDisk\transcriptor\transcriptor\transcriptor\obj\Debug\transcriptor.csprojAssemblyReference.cache
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\transcriptor.exe.config
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\transcriptor.exe
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\transcriptor.pdb
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor.csprojAssemblyReference.cache
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\MainWindow.g.cs
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\App.g.cs
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor_MarkupCompile.cache
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor_MarkupCompile.lref
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\MainWindow.baml
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor.g.resources
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor.Properties.Resources.resources
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor.csproj.GenerateResource.cache
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor.csproj.CoreCompileInputs.cache
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor.exe
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor.pdb
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\ControlzEx.dll
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\MahApps.Metro.dll
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\ControlzEx.pdb
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\ControlzEx.xml
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\MahApps.Metro.pdb
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\MahApps.Metro.xml
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\YandexDisk\transcriptor\transcript\transcriptor\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\YandexDisk\transcriptor\transcript\transcriptor\obj\Debug\transcriptor.csproj.CopyComplete
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\transcriptor.exe.config
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\transcriptor.exe
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\transcriptor.pdb
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\ControlzEx.dll
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\MahApps.Metro.dll
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\ControlzEx.pdb
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\ControlzEx.xml
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\MahApps.Metro.pdb
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\MahApps.Metro.xml
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\каталоги\рабочий стол\transcriptor\transcriptor\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor.csprojAssemblyReference.cache
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\MainWindow.g.cs
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\App.g.cs
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor_MarkupCompile.cache
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor_MarkupCompile.lref
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\MainWindow.baml
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor.g.resources
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor.Properties.Resources.resources
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor.csproj.GenerateResource.cache
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor.csproj.CoreCompileInputs.cache
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor.csproj.CopyComplete
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor.exe
+D:\каталоги\рабочий стол\transcriptor\transcriptor\obj\Debug\transcriptor.pdb
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor.csprojAssemblyReference.cache
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\MainWindow.g.cs
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\App.g.cs
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor_MarkupCompile.cache
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor_MarkupCompile.lref
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor.exe
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor.pdb
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\transcriptor.exe.config
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\transcriptor.exe
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\transcriptor.pdb
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\ControlzEx.dll
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\MahApps.Metro.dll
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\ControlzEx.pdb
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\ControlzEx.xml
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\MahApps.Metro.pdb
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\MahApps.Metro.xml
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\MainWindow.baml
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor.g.resources
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor.Properties.Resources.resources
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor.csproj.GenerateResource.cache
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor.csproj.CoreCompileInputs.cache
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\transcriptor.csproj.CopyComplete
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\MaterialDesignColors.dll
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\MaterialDesignColors.pdb
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\REPO\QwertyTranscriptor\transcriptor\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\REPO\QwertyTranscriptor\transcriptor\obj\Debug\App.baml
