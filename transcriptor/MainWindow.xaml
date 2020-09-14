@@ -18,7 +18,7 @@
 
 
     <Grid Margin="10">
-        <Button x:Name="but" Content="выполнить" Margin="0,263,10,0" Width="120" Click="But_Click_1" Height="32" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <Button x:Name="but" Content="Выполнить" Margin="0,263,10,0" Width="120" Click="But_Click_1" Height="32" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
         <ComboBox x:Name="combo" Margin="10,263,0,0" Width="120" IsSynchronizedWithCurrentItem="True" SelectedIndex="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" BorderBrush="Black" Foreground="Black">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -30,7 +30,15 @@
             <ComboBoxItem Content="en->ru"/>
         </ComboBox>
         <Label x:Name="label" Content="Символов: " HorizontalAlignment="Left" Margin="244,235,0,0" VerticalAlignment="Top" Width="120" Height="23" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="text" HorizontalAlignment="Left" Height="220" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="354"/>
+        <TextBox x:Name="text"
+    Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+    VerticalAlignment="Top"
+    Height="229"
+    AcceptsReturn="True"
+    TextWrapping="Wrap"
+    VerticalScrollBarVisibility="Auto"
+    materialDesign:HintAssist.Hint="Вставьте эльфийский сюда"
+    IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" />
         <ToggleButton x:Name="toggle"
   Style="{StaticResource MaterialDesignSwitchToggleButton}"
   ToolTip="Default ToggleButton Style" Margin="10,235,319,40" IsChecked="True" />
