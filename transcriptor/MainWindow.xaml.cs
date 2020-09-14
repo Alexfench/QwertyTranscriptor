@@ -5,8 +5,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -18,37 +16,6 @@ namespace transcriptor
         readonly string RU_Symbols = "ё1234567890-=йцукенгшщзхъ\\фывапролджэячсмитьбю.Ё!\"№;%:?*()_+ЙЦУКЕНГШЩЗХЪ/ФЫВАПРОЛДЖЭЯЧСМИТЬБЮ, –";
         readonly string EN_Symbols = "`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:\"ZXCVBNM<>? –";
         int i, j, k;
-
-        private async void Button_Click(object sender, RoutedEventArgs e)
-        {
-            SnackbarOne.IsActive = false;
-            SnackbarOne.IsActive = true;
-            SnackbarOne.Message.Content = "Вставил";
-            text.Text += Clipboard.GetText();
-            await Task.Delay(1000);
-            SnackbarOne.IsActive = false;
-
-        }
-
-        private async void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            SnackbarOne.IsActive = false;
-            SnackbarOne.IsActive = true;
-            SnackbarOne.Message.Content = "Скопировал";
-            Clipboard.SetText(text.Text);
-            await Task.Delay(1000);
-            SnackbarOne.IsActive = false;
-        }
-
-        private async void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            SnackbarOne.IsActive = false;
-            SnackbarOne.IsActive = true;
-            SnackbarOne.Message.Content = "Очистил";
-            text.Text = null;
-            await Task.Delay(1000);
-            SnackbarOne.IsActive = false;
-        }
 
         public MainWindow()
         {
