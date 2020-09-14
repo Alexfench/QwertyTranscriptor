@@ -13,8 +13,8 @@
      TextOptions.TextRenderingMode="Auto"
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="transcriptor" Width="400" Height="356" ResizeMode="CanMinimize" Icon="i1VYyQDrNn4.jpg">
-
+        Title="transcriptor" Width="400" Height="356" ResizeMode="CanMinimize" Icon="favicon.ico">
+    
 
 
     <Grid Margin="10">
@@ -30,10 +30,10 @@
             <ComboBoxItem Content="en->ru"/>
         </ComboBox>
         <Label x:Name="label" Content="Символов: " HorizontalAlignment="Left" Margin="244,235,0,0" VerticalAlignment="Top" Width="120" Height="23" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="text" HorizontalAlignment="Left" Height="220" Margin="10,10,0,0" TextWrapping="Wrap" Text="Ddtlbnt cdjq ntrcn" VerticalAlignment="Top" Width="354"/>
+        <TextBox x:Name="text" HorizontalAlignment="Left" Height="220" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="354"/>
         <ToggleButton x:Name="toggle"
   Style="{StaticResource MaterialDesignSwitchToggleButton}"
-  ToolTip="Default ToggleButton Style" Margin="10,235,319,40" />
+  ToolTip="Default ToggleButton Style" Margin="10,235,319,40" IsChecked="True" />
         <Label Content="Удалять другой язык" HorizontalAlignment="Left" Margin="60,234,0,0" VerticalAlignment="Top" Height="24"/>
     </Grid>
 
