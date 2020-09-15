@@ -61,8 +61,7 @@ namespace transcriptor
             Properties.Settings.Default.Save();
             grid.Background = new SolidColorBrush(Color.FromRgb(48, 48, 48));
 
-            label1.Foreground = Brushes.White;
-            label2.Foreground = Brushes.White;
+
 
             combo.Background = new SolidColorBrush(Color.FromRgb(48, 48, 48));
             combo.Foreground = Brushes.White;
@@ -84,8 +83,6 @@ namespace transcriptor
             Properties.Settings.Default.Save();
             grid.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
 
-            label1.Foreground = Brushes.Black;
-            label2.Foreground = Brushes.Black;
 
             combo.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
             combo.Foreground = Brushes.Black;
