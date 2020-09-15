@@ -9,7 +9,9 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace transcriptor
 {
@@ -20,45 +22,85 @@ namespace transcriptor
         readonly string EN_Symbols = "`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:\"ZXCVBNM<>? –\n";
         int i, j, k;
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
-        {
-            SnackbarOne.IsActive = false;
-            SnackbarOne.IsActive = true;
-            SnackbarOne.Message.Content = "Вставил";
-            text.Text += Clipboard.GetText();
-            await Task.Delay(1000);
-            SnackbarOne.IsActive = false;
-
-        }
-
-        private async void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            SnackbarOne.IsActive = false;
-            SnackbarOne.IsActive = true;
-            SnackbarOne.Message.Content = "Скопировал";
-            Clipboard.SetText(text.Text);
-            await Task.Delay(1000);
-            SnackbarOne.IsActive = false;
-        }
-
-        private async void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            SnackbarOne.IsActive = false;
-            SnackbarOne.IsActive = true;
-            SnackbarOne.Message.Content = "Очистил";
-            MaterialDesignThemes.Wpf.HintAssist.SetHint(text, "Вставьте эльфийский текст");
-            text.Text = null;
-            await Task.Delay(1000);
-            SnackbarOne.IsActive = false;
-        }
-
         public MainWindow()
         {
             InitializeComponent();
+            overtoggle.IsChecked = Properties.Settings.Default.overing;
+            theme.IsChecked = Properties.Settings.Default.theme;
+            toggle.IsChecked = Properties.Settings.Default.txtdel;
+
+            
+        }
+        private void toggle_Checked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.txtdel = true;
+            Properties.Settings.Default.Save();
+        }
+        private void toggle_UnChecked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.txtdel = false;
+            Properties.Settings.Default.Save();
+        }
+        private void overtoggle_Checked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.overing = true;
+            Properties.Settings.Default.Save();
+            Topmost = true;
 
         }
+        private void toggleButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.overing = false;
+            Properties.Settings.Default.Save();
+            Topmost = false;
 
+        }
+        private void overtoggle2_Checked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.theme = true;
+            Properties.Settings.Default.Save();
+            grid.Background = new SolidColorBrush(Color.FromRgb(48, 48, 48));
 
+            label1.Foreground = Brushes.White;
+            label2.Foreground = Brushes.White;
+
+            combo.Background = new SolidColorBrush(Color.FromRgb(48, 48, 48));
+            combo.Foreground = Brushes.White;
+
+            text.Background = new SolidColorBrush(Color.FromRgb(100, 100, 100));
+            text.Foreground = Brushes.White;
+
+            HintAssist.SetBackground(text, new SolidColorBrush(Color.FromRgb(150, 150, 150)));
+            HintAssist.SetForeground(text, new SolidColorBrush(Color.FromRgb(103, 59, 183)));
+            
+            window.Background = new SolidColorBrush(Color.FromRgb(48, 48, 48));
+
+            SnackbarOne.Background = new SolidColorBrush(Color.FromRgb(100, 100, 100));
+            SnackbarOne.Foreground = Brushes.White;
+        }
+        private void toggleButton2_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.theme = false;
+            Properties.Settings.Default.Save();
+            grid.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+
+            label1.Foreground = Brushes.Black;
+            label2.Foreground = Brushes.Black;
+
+            combo.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            combo.Foreground = Brushes.Black;
+
+            text.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            text.Foreground = Brushes.Black;
+
+            HintAssist.SetBackground(text, new SolidColorBrush(Color.FromRgb(255, 255, 255)));
+            HintAssist.SetForeground(text, new SolidColorBrush(Color.FromRgb(103, 59, 183)));
+
+            window.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+
+            SnackbarOne.Background = new SolidColorBrush(Color.FromRgb(48, 48, 48));
+            SnackbarOne.Foreground = Brushes.White;
+        }
 
         private void But_Click_1(object sender, RoutedEventArgs e)
         {
@@ -85,7 +127,7 @@ namespace transcriptor
             }
 
 
-            MaterialDesignThemes.Wpf.HintAssist.SetHint(text, $"Символов: {k}");
+            HintAssist.SetHint(text, $"Символов: {k}");
 
             for (i = 0; i <= k - 1; i++)
             {
@@ -136,6 +178,52 @@ namespace transcriptor
                 }
                 j = 0;
             }
+        }
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SnackbarOne.IsActive = false;
+            SnackbarOne.IsActive = true;
+            SnackbarOne.Message.Content = "Вставил";
+            text.Text += Clipboard.GetText();
+            await Task.Delay(1000);
+            SnackbarOne.IsActive = false;
+
+        }
+
+        private void text_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            string line2 = text.Text;
+
+            List<char> Line2 = new List<char> { };
+
+            foreach (char a in line2)
+            {
+                Line2.Add(a);
+            }
+            MaterialDesignThemes.Wpf.HintAssist.SetHint(text, $"Символов: {Line2.Count}");
+        }
+
+
+
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            SnackbarOne.IsActive = false;
+            SnackbarOne.IsActive = true;
+            SnackbarOne.Message.Content = "Скопировал";
+            Clipboard.SetText(text.Text);
+            await Task.Delay(1000);
+            SnackbarOne.IsActive = false;
+        }
+
+        private async void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            SnackbarOne.IsActive = false;
+            SnackbarOne.IsActive = true;
+            SnackbarOne.Message.Content = "Очистил";
+            MaterialDesignThemes.Wpf.HintAssist.SetHint(text, "Вставьте эльфийский текст");
+            text.Text = null;
+            await Task.Delay(1000);
+            SnackbarOne.IsActive = false;
         }
     }
 }

@@ -5,6 +5,7 @@
         xmlns:local="clr-namespace:transcriptor"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        x:Name="window"
         x:Class="transcriptor.MainWindow"
         mc:Ignorable="d"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -22,7 +23,8 @@
 
 
 
-    <Grid Margin="10">
+    <Grid x:Name="grid"
+          Margin="10" >
         <ComboBox x:Name="combo"
                   Margin="10,0,0,10"
                   HorizontalAlignment="Left"
@@ -41,19 +43,22 @@
                  materialDesign:HintAssist.Hint="Вставьте эльфийский текст"
                  materialDesign:HintAssist.FloatingScale="1"
                  IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}"
-                 Margin="10,10,10,99" />
+                 Margin="10,38,10,99"
+                 TextChanged="text_TextChanged" />
         <ToggleButton x:Name="toggle"
                       Style="{StaticResource MaterialDesignSwitchToggleButton}"
-                      ToolTip="Default ToggleButton Style"
+                      ToolTip="Удалять другой язык"
                       Margin="10,0,0,55"
-                      IsChecked="True"
                       HorizontalAlignment="Left"
                       VerticalAlignment="Bottom"
                       Height="22"
                       HorizontalContentAlignment="Center"
                       VerticalContentAlignment="Bottom"
-                      Width="43" />
-        <Label Content="Удалять другой язык"
+                      Width="43"
+                      Checked="toggle_Checked"
+                      Unchecked="toggle_UnChecked" />
+        <Label x:Name="label2"
+               Content="Удалять другой язык"
                HorizontalAlignment="Left"
                Margin="58,0,0,55"
                Height="23"
@@ -105,6 +110,54 @@
         <materialDesign:Snackbar Message="скопировал"
                                  IsActive="false"
                                  x:Name="SnackbarOne" />
+        <ToggleButton x:Name="overtoggle"
+                      Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                      ToolTip="поверх других окон"
+                      Margin="10,10,0,0"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Top"
+                      Height="18"
+                      Width="40"
+                      Checked="overtoggle_Checked"
+                      Unchecked="toggleButton_Unchecked">
+            <materialDesign:PackIcon Kind="Pin"
+                                     RenderTransformOrigin=".5,.5">
+                <materialDesign:PackIcon.RenderTransform>
+                    <RotateTransform Angle="45" />
+                </materialDesign:PackIcon.RenderTransform>
+            </materialDesign:PackIcon>
+            <materialDesign:ToggleButtonAssist.OnContent>
+                <materialDesign:PackIcon Kind="Pin" />
+            </materialDesign:ToggleButtonAssist.OnContent>
+        </ToggleButton>
+        <Label x:Name="label1"
+               Content="Поверх других окон"
+               HorizontalAlignment="Left"
+               Margin="55,8,0,0"
+               VerticalAlignment="Top"
+               Background="Transparent" />
+        <ToggleButton x:Name="theme"
+                      Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                      ToolTip="темная тема"
+                      Margin="188,10,0,0"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Top"
+                      Height="18"
+                      Width="37"
+                      Checked="overtoggle2_Checked"
+                      Unchecked="toggleButton2_Unchecked">
+            <materialDesign:ToggleButtonAssist.OnContent>
+                <materialDesign:PackIcon Kind="MoonWaningCrescent" />
+            </materialDesign:ToggleButtonAssist.OnContent>
+            <materialDesign:PackIcon Kind="WeatherSunny"
+                                     RenderTransformOrigin=".5,.5">
+                <materialDesign:PackIcon.RenderTransform>
+                    <RotateTransform Angle="45" />
+                </materialDesign:PackIcon.RenderTransform>
+            </materialDesign:PackIcon>
+        </ToggleButton>
+
     </Grid>
+
 
 </Window>
