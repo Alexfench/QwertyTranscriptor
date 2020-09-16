@@ -19,6 +19,8 @@
         Width="458"
         Height="420"
         Icon="favicon.ico"
+        BorderBrush="Black"
+        OpacityMask="Black"
         ResizeMode="CanMinimize">
 
 
@@ -31,9 +33,13 @@
                   VerticalAlignment="Bottom"
                   Width="179"
                   Height="32"
-                  SelectedIndex="1">
-            <ComboBoxItem Content="Russian → English" />
-            <ComboBoxItem Content="English → Russian " />
+                  SelectedIndex="1"
+                  Background="#00000000">
+            <ComboBoxItem x:Name="item1"
+                          Content="Russian → English"
+                          Background="Transparent" />
+            <ComboBoxItem x:Name="item2"
+                          Content="English → Russian " />
         </ComboBox>
         <TextBox x:Name="text"
                  Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
@@ -43,8 +49,9 @@
                  materialDesign:HintAssist.Hint="Вставьте эльфийский текст"
                  materialDesign:HintAssist.FloatingScale="1"
                  IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}"
-                 Margin="10,38,10,99"
+                 Margin="10,45,10,99"
                  TextChanged="text_TextChanged" />
+
         <ToggleButton x:Name="toggle"
                       Style="{StaticResource MaterialDesignSwitchToggleButton}"
                       ToolTip="Удалять другой язык"
@@ -57,15 +64,15 @@
                       Width="37"
                       Checked="toggle_Checked"
                       Unchecked="toggle_UnChecked">
+            <materialDesign:ToggleButtonAssist.OnContent>
+                <materialDesign:PackIcon Kind="Delete" />
+            </materialDesign:ToggleButtonAssist.OnContent>
             <materialDesign:PackIcon Kind="DeleteOff"
                                      RenderTransformOrigin=".5,.5">
                 <materialDesign:PackIcon.RenderTransform>
                     <RotateTransform Angle="0" />
                 </materialDesign:PackIcon.RenderTransform>
             </materialDesign:PackIcon>
-            <materialDesign:ToggleButtonAssist.OnContent>
-                <materialDesign:PackIcon Kind="Delete" />
-            </materialDesign:ToggleButtonAssist.OnContent>
         </ToggleButton>
         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
                 HorizontalAlignment="Right"
@@ -83,6 +90,7 @@
                 Margin="0,0,10,47"
                 VerticalAlignment="Bottom"
                 Click="Button_Click_2">
+
             <materialDesign:PackIcon Kind="Delete"
                                      Height="24"
                                      Width="24" />
@@ -125,15 +133,15 @@
                       Width="40"
                       Checked="overtoggle_Checked"
                       Unchecked="toggleButton_Unchecked">
+            <materialDesign:ToggleButtonAssist.OnContent>
+                <materialDesign:PackIcon Kind="Pin" />
+            </materialDesign:ToggleButtonAssist.OnContent>
             <materialDesign:PackIcon Kind="Pin"
                                      RenderTransformOrigin=".5,.5">
                 <materialDesign:PackIcon.RenderTransform>
                     <RotateTransform Angle="45" />
                 </materialDesign:PackIcon.RenderTransform>
             </materialDesign:PackIcon>
-            <materialDesign:ToggleButtonAssist.OnContent>
-                <materialDesign:PackIcon Kind="Pin" />
-            </materialDesign:ToggleButtonAssist.OnContent>
         </ToggleButton>
         <ToggleButton x:Name="theme"
                       Style="{StaticResource MaterialDesignSwitchToggleButton}"
@@ -155,7 +163,6 @@
                 </materialDesign:PackIcon.RenderTransform>
             </materialDesign:PackIcon>
         </ToggleButton>
-
     </Grid>
 
 
